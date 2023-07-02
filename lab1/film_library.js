@@ -17,7 +17,7 @@ class FilmLibrary {
     };
 
     sortByDate = () => {
-        let films = [...this.films];    // copy
+        const films = [...this.films];    // copy
 
         films.sort((film1, film2) => {
             if (film1.watchDate === null && film2.watchDate === null)
@@ -42,7 +42,7 @@ class FilmLibrary {
     };
 
     getRated = () => {
-        let films = this.films
+        const films = this.films
             .filter(film => film.score !== null)    // new array
             .sort((film1, film2) => film2.score - film1.score);
         return new FilmLibrary(films);

@@ -20,7 +20,7 @@ console.log(f(["it", "cat", "c"]));
 * Exercises 1+2 *
 *****************/
 
-let films = [
+const films = [
     new Film("1", "Pulp Fiction", true, "2022-03-10", 5),
     new Film("2", "21 Grams", true, "2022-03-17", 4),
     new Film("3", "Star Wars", false),
@@ -39,7 +39,7 @@ console.log(filmLibrary.toString());
 
 // Delete film
 filmLibrary = new FilmLibrary(films);
-let film = films[0];
+const film = films[0];
 filmLibrary.deleteFilm(film.id);
 console.log(`Delete ID=${film.id}:`);
 

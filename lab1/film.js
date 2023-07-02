@@ -12,10 +12,10 @@ class Film {
     }
 
     toString = () => {
-        let watchDate = this.watchDate !== null
+        const watchDate = this.watchDate !== null
             ? this.watchDate.format("YYYY-MM-DD")
             : "<not defined>";
-        let score = this.score !== null ? this.score : "<not defined>";
+        const score = this.score !== null ? this.score : "<not defined>";
 
         return `Id: ${this.id}`
             + `, Title: ${this.title}`
