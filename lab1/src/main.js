@@ -42,6 +42,7 @@ filmLibrary = new FilmLibrary(films);
 const film = films[0];
 filmLibrary.deleteFilm(film.id);
 console.log(`Delete ID=${film.id}:`);
+console.log(filmLibrary.toString());
 
 // Reset watched dates
 filmLibrary = new FilmLibrary(films);

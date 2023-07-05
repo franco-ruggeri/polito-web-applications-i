@@ -33,8 +33,11 @@ class FilmLibrary {
     _run = async (sql, params) => {
         return new Promise((resolve, reject) => {
             this.database.run(sql, params, function (err) {
-                if (err) reject(err);
-                else resolve();
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve();
+                }
             });
         });
     };
