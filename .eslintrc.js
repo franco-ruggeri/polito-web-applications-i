@@ -25,7 +25,7 @@ module.exports = {
     "rules": {
         "indent": [
             "error",
-            4
+            4,
         ],
         "linebreak-style": [
             "error",
@@ -39,6 +39,7 @@ module.exports = {
             "error",
             "always"
         ],
-        "max-len": ["error", { "code": 79 }]
+        "max-len": ["error", { "code": 79 }],
+        "camelcase": "error",
     }
 };
