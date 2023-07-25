@@ -83,11 +83,11 @@ class FilmLibrary {
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Title</th>
-                        <th scope="col">Favorite</th>
-                        <th scope="col">Watch date</th>
-                        <th scope="col">Rating</th>
-                        <th scope="col">Actions</th>
+                        <th>Title</th>
+                        <th>Favorite</th>
+                        <th>Watch date</th>
+                        <th>Rating</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>${films}</tbody>
